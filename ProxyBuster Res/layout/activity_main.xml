@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#face2f"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_attendance_logo"
+            android:transitionName="logo_img" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@id/imageview"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bungee"
+            android:gravity="center"
+            android:text="ProxyBuster"
+            android:textColor="#ad168b"
+            android:textSize="@dimen/_31ssp"
+            android:transitionName="app_name" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tag"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Say Good Bye to Proxy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>

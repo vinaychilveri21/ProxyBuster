@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">@color/purple_500</item>
+        <item name="android:windowContentTransitions">true</item>
+        
+    </style>
+
+    <style name="ThemeOverlay.Material3.NavigationView">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">#861A98</item>
+
+        <!-- Background color when SELECTED -->
+        <!-- <item name="colorControlHighlight">@color/black</item> -->
+
+    </style>
+    
+</resources>

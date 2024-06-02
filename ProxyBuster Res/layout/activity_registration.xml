@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegistrationActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/reg_progress"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_logo1"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_105sdp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_reg"
+                android:transitionName="logo_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-30dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/welcome1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_54sdp"
+                    android:fontFamily="@font/bungee"
+                    android:gravity="left"
+                    android:text="Welcome,"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_25ssp"
+                    android:transitionName="app_name" />
+
+                <TextView
+                    android:id="@+id/sign_up_to_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SignUp to start new journey"
+                    android:textColor="#4E4C4D"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    android:transitionName="app_desc" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fullnamecontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Full Name"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:errorEnabled="true"
+                    app:placeholderText="e.g.: firstname middlename lastname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:cursorVisible="true"
+                        android:id="@+id/editfullname"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/prncontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="PRN No."
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:errorEnabled="true"
+                    app:placeholderText="e.g.: 72296709F"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:cursorVisible="true"
+                        android:id="@+id/editprn"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rollnocontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Roll No."
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:helperTextEnabled="true"
+                    app:placeholderText="e.g.: 01"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:cursorVisible="true"
+                        android:id="@+id/editrollno"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/yearcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/select_yr"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbox"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/deptcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/select_dept"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/black"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autodept"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbox"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/divcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/select_div"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/black"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autodiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbox"
+                        android:inputType="none"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobilecontainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Mobile"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:counterMaxLength="10"
+                    app:counterOverflowTextColor="@color/red"
+                    app:counterTextColor="@color/black"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:prefixText="+91"
+                    app:prefixTextColor="@color/black"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:id="@+id/editmob"
+                        android:cursorVisible="true"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailcontainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Email"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:transitionName="mail_tran"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="e.g.: abc@gmail.com"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:cursorVisible="true"
+                        android:id="@+id/editregmail"
+                        android:textColor="@color/black"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passwordcontainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/black"
+                    android:transitionName="password_tran"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="25"
+                    app:counterTextColor="@color/black"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:hintTextColor="@color/black"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black"
+                    app:placeholderText="e.g.: Abcd@123"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:id="@+id/editregpassword"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="#ad168b"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmpasswordcontainer"
+                    android:layout_margin="10dp"
+                    android:hint="Confirm Password"
+                    android:textColorHint="@color/black"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="#D50000"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="25"
+                    app:counterTextColor="@color/black"
+                    app:endIconTint="@color/black"
+                    app:errorTextColor="#D50000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/black"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black"
+                    app:placeholderText="e.g.: Abcd@123"
+                    app:errorEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:id="@+id/editregconfirmpassword"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="#ad168b"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_signup"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/button"
+                    android:onClick="funRegister"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    android:transitionName="button_tran" />
+
+                <TextView
+                    android:id="@+id/txt_back_to_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Already have an account? LogIn"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    android:transitionName="login_signup_tran" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
