@@ -10,15 +10,6 @@
             />
     </group>
 
-    <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/nav_QR"
-            android:title="Your QR Code"
-            android:icon="@drawable/ic_qr"
-            />
-    </group>
-
     <item android:title="Profile Settings">
         <menu>
             <group android:checkableBehavior="single">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -60,7 +61,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LogIn to Continue"
+                    android:text="Login to Continue"
                     android:id="@+id/login_to_continue"
                     android:textSize="@dimen/_15ssp"
                     android:layout_marginTop="-8dp"
@@ -109,7 +110,7 @@
                     app:endIconTint="@color/black"
                     app:helperTextEnabled="true"
                     app:helperTextTextColor="@color/red"
-                    app:placeholderText="ex: abc@gmail.com"
+                    app:placeholderText="ex: abc@sinhgad.edu"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -129,13 +130,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
                 -->
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/loginprncontainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/loginmobilecontainer"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
-                    android:hint="PRN No."
+                    android:transitionName="mob_tran"
+                    android:hint="Mobile"
                     android:outlineSpotShadowColor="@color/black"
                     android:textColorHint="@color/black"
                     app:boxCornerRadiusBottomEnd="40dp"
@@ -144,28 +146,34 @@
                     app:boxCornerRadiusTopStart="40dp"
                     app:boxStrokeColor="@color/black"
                     app:boxStrokeErrorColor="#D50000"
+                    app:counterMaxLength="10"
+                    app:counterOverflowTextColor="@color/red"
+                    app:counterTextColor="@color/black"
                     app:endIconMode="clear_text"
                     app:endIconTint="@color/black"
                     app:errorTextColor="#D50000"
-                    app:helperTextEnabled="true"
-                    android:transitionName="prn_tran"
                     app:helperTextTextColor="@color/red"
                     app:hintTextColor="@color/black"
+                    app:prefixTextColor="@color/black"
+                    app:helperTextEnabled="true"
                     app:errorEnabled="true"
-                    app:placeholderText="ex: 72296709F"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/editprn"
+                        android:id="@+id/loginmob"
                         android:textColor="@color/black"
                         android:backgroundTint="@color/black"
                         android:drawableStart="@drawable/custom_email_icon"
                         android:textColorHint="@color/black"
                         android:drawablePadding="12dp"
+                        android:inputType="number"
+                        android:maxLength="10"
                         android:textCursorDrawable="@null"
-                        android:cursorVisible="true" />
+                        android:cursorVisible="true"
+                         />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -260,3 +268,4 @@
     </ScrollView>
 
 </RelativeLayout>
+</layout>

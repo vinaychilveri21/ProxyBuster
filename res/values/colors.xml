@@ -13,7 +13,9 @@
     <color name="login_status_color">#fff</color>
     <color name="reg_status_color">#fff</color>
     <color name="abc">#681095</color>
+    <color name="green">#96c896</color>
     <color name="red">#D50000</color>
     <color name="test">#1637EF</color>
+    <color name="signup">#1637EF</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/black</color>
 </resources>

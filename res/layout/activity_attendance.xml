@@ -8,21 +8,21 @@
     android:orientation="vertical">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="@color/black"
-        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/black"
+            >
 
-        <ImageView
-            android:layout_width="@dimen/_35sdp"
-            android:layout_height="@dimen/_35sdp"
-            android:layout_centerVertical="true"
-            android:padding="@dimen/_9sdp"
-            android:id="@+id/img_back"
-            android:src="@drawable/ic_back_arrow"
-            />
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_9sdp"
+                android:id="@+id/img_back"
+                android:src="@drawable/ic_back_arrow"
+                />
+        </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,37 +66,37 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
         >
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Roll No."
-            android:background="@drawable/heading_shape"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:padding="@dimen/_8ssp"
-            android:textSize="@dimen/_9ssp"
-            android:layout_weight="2"
-            android:gravity="center"
-            />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Name"
-            android:background="@drawable/heading_shape"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:padding="@dimen/_8ssp"
-            android:textSize="@dimen/_9ssp"
-            android:layout_weight="9"
-            android:gravity="center"
-            />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Roll No."
+                android:background="@drawable/heading_shape"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="@dimen/_8ssp"
+                android:textSize="@dimen/_9ssp"
+                android:layout_weight="2"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:background="@drawable/heading_shape"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="@dimen/_8ssp"
+                android:textSize="@dimen/_9ssp"
+                android:layout_weight="9"
+                android:gravity="center"
+                />
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -124,15 +124,15 @@
 
     </LinearLayout>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lst_view"
-        android:scrollbars="vertical"
-        android:layout_marginRight="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lst_view"
+            android:scrollbars="vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
 
 
 
